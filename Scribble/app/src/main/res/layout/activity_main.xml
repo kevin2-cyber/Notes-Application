@@ -8,16 +8,17 @@
     android:padding="20dp"
     tools:context=".MainActivity">
 
+
     <TextView
         android:id="@+id/textView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:fontFamily="@font/poppins"
-        android:text="Hello World!"
+        android:gravity="center_horizontal"
         android:paddingTop="60dp"
-        android:gravity="center"
+        android:layout_marginStart="70dp"
+        android:text="Hello World!"
         android:textSize="40sp" />
-
 
     <Button
         android:id="@+id/login_btn"
@@ -28,7 +29,7 @@
         android:textAllCaps="false"
         android:fontFamily="@font/poppins"
         android:textSize="20sp"
-        android:layout_marginTop="500dp"
+        android:layout_marginTop="510dp"
         android:layout_marginStart="130dp" />
 
 </LinearLayout>
