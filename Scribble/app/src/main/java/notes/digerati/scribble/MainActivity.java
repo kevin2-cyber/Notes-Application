@@ -4,6 +4,7 @@ import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
+import android.widget.Button;
 import android.widget.TextView;
 
 import java.util.Objects;
@@ -18,5 +19,7 @@ public class MainActivity extends AppCompatActivity {
 
         TextView textView = findViewById(R.id.textView);
         textView.setText(R.string.app_name);
+        Button loginBtn = findViewById(R.id.login_btn);
+        Button signBtn = findViewById(R.id.sign_up_btn);
     }
 }
