@@ -8,6 +8,6 @@
 
         <item name="windowSplashScreenAnimatedIcon">@mipmap/ic_launcher_round</item>
 
-        <item name="postSplashScreenTheme">@style/Theme.Scribble</item>
+        <item name="postSplashScreenTheme">@style/Theme.AppCompat.Scribble</item>
     </style>
 </resources>
