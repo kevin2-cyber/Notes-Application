@@ -6,3 +6,9 @@ class Order(db.Entity):
 
 class Customer(db.Entity):
     orders = Set(lambda: Order)
+
+class Order(db.Entity):
+    items = Set("OrderItem")
+
+class OrderItem(db.Entity):
+    order = Required(Order)
