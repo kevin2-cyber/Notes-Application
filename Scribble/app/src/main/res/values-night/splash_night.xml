@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="Theme.AppCompat.SplashNight" parent="Theme.SplashScreen">
+
+        <item name="windowSplashScreenBackground">@color/darkGrey</item>
+
+        <item name="windowSplashScreenAnimationDuration">3000</item>
+
+        <item name="windowSplashScreenAnimatedIcon">@mipmap/ic_launcher_round</item>
+
+        <item name="postSplashScreenTheme">@style/Theme.Scribble</item>
+    </style>
+</resources>
