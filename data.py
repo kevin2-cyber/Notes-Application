@@ -16,4 +16,9 @@ class Order(db.Entity):
     items = Set("OrderItem")
 
 class OrderItem(db.Entity):
+    class Order(db.Entity):
+    items = Set("OrderItem")
+
+class OrderItem(db.Entity):
+    order = Optional(Order)
     order = Optional(Order)
