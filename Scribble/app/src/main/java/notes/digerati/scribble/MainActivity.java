@@ -7,10 +7,7 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.annotation.SuppressLint;
 import android.os.Build;
 import android.os.Bundle;
-import android.widget.Button;
-import android.widget.TextView;
 
-import java.util.Objects;
 
 import notes.digerati.scribble.databinding.ActivityMainBinding;
 
