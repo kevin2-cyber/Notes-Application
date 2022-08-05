@@ -12,17 +12,23 @@ import android.widget.TextView;
 
 import java.util.Objects;
 
+import notes.digerati.scribble.databinding.ActivityMainBinding;
+
 public class MainActivity extends AppCompatActivity {
+
+    ActivityMainBinding binding;
 
     @SuppressLint("ResourceType")
     @RequiresApi(api = Build.VERSION_CODES.S)
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
+
+        binding = ActivityMainBinding.inflate(getLayoutInflater());
         super.onCreate(savedInstanceState);
         getSplashScreen().setOnExitAnimationListener(view -> {
             setContentView(R.style.Theme_AppCompat_SplashDay);
         });
-        setContentView(R.layout.activity_main);
+        setContentView(binding.getRoot());
 
         TextView textView = findViewById(R.id.textView);
         textView.setText(R.string.app_name);
