@@ -22,9 +22,7 @@ public class MainActivity extends AppCompatActivity {
 
         binding = ActivityMainBinding.inflate(getLayoutInflater());
         super.onCreate(savedInstanceState);
-        getSplashScreen().setOnExitAnimationListener(view -> {
-            setContentView(R.style.Theme_AppCompat_SplashDay);
-        });
+        getSplashScreen().setOnExitAnimationListener(view -> setContentView(R.style.Theme_AppCompat_SplashDay));
         setContentView(binding.getRoot());
 
         binding.textView.setText(R.string.app_name);
