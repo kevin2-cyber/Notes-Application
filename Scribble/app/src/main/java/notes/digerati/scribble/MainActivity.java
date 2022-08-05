@@ -23,7 +23,6 @@ public class MainActivity extends AppCompatActivity {
             setContentView(R.style.Theme_AppCompat_SplashDay);
         });
         setContentView(R.layout.activity_main);
-        Objects.requireNonNull(getSupportActionBar()).hide();
 
         TextView textView = findViewById(R.id.textView);
         textView.setText(R.string.app_name);
