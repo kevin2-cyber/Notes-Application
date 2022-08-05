@@ -30,8 +30,7 @@ public class MainActivity extends AppCompatActivity {
         });
         setContentView(binding.getRoot());
 
-        TextView textView = findViewById(R.id.textView);
-        textView.setText(R.string.app_name);
+        binding.textView.setText(R.string.app_name);
         Button loginBtn = findViewById(R.id.login_btn);
         Button signBtn = findViewById(R.id.sign_up_btn);
     }
