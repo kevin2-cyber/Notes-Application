@@ -6,4 +6,9 @@
     <string name="second_sentence">keep track of all your ideas in one place</string>
     <string name="get_started">Get Started</string>
     <string name="welcome_msg">Welcome to Scribble Notes App</string>
+    <string name="email">Enter your Email</string>
+    <string name="password">Enter Your Password</string>
+    <string name="confirm">Confirm Password</string>
+    <string name="sign_in">Sign in</string>
+    <string name="already_have_an_account">Already have an account?</string>
 </resources>
