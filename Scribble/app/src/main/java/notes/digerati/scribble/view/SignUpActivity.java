@@ -5,12 +5,16 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.os.Bundle;
 
 import notes.digerati.scribble.R;
+import notes.digerati.scribble.databinding.ActivitySignUpBinding;
 
 public class SignUpActivity extends AppCompatActivity {
 
+    ActivitySignUpBinding binding;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
+        binding = ActivitySignUpBinding.inflate(getLayoutInflater());
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_sign_up);
+        setContentView(binding.getRoot());
     }
 }
