@@ -25,6 +25,5 @@ public class MainActivity extends AppCompatActivity {
         getSplashScreen().setOnExitAnimationListener(view -> setContentView(R.style.Theme_AppCompat_SplashDay));
         setContentView(binding.getRoot());
 
-        binding.textView.setText(R.string.app_name);
     }
 }
