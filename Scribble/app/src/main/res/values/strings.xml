@@ -4,4 +4,5 @@
     <string name="login">Login</string>
     <string name="first_sentence">A fast and simple way to journal and</string>
     <string name="second_sentence">keep track of all your ideas in one place</string>
+    <string name="get_started">Get Started</string>
 </resources>
