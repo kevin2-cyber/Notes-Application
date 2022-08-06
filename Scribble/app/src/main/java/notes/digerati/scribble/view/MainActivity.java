@@ -1,4 +1,4 @@
-package notes.digerati.scribble;
+package notes.digerati.scribble.view;
 
 import androidx.annotation.Nullable;
 import androidx.annotation.RequiresApi;
@@ -9,6 +9,7 @@ import android.os.Build;
 import android.os.Bundle;
 
 
+import notes.digerati.scribble.R;
 import notes.digerati.scribble.databinding.ActivityMainBinding;
 
 public class MainActivity extends AppCompatActivity {

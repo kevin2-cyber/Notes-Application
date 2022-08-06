@@ -1,8 +1,10 @@
-package notes.digerati.scribble;
+package notes.digerati.scribble.view;
 
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
+
+import notes.digerati.scribble.R;
 
 public class SignUpActivity extends AppCompatActivity {
 
