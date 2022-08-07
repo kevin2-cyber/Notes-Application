@@ -14,7 +14,7 @@
         android:theme="@style/Theme.AppCompat.Scribble"
         tools:targetApi="31">
         <activity
-            android:name=".WorkSpaceActivity"
+            android:name=".view.WorkSpaceActivity"
             android:exported="false" />
         <activity
             android:name=".view.AddScreenActivity"
