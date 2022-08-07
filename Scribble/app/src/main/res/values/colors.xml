@@ -8,7 +8,7 @@
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
     <color name="lightGrey">#d3d3d3</color>
-    <color name="darkGrey">#808080</color>
+    <color name="kFontColor">#373333</color>
     <color name="you">#1E1E1E</color>
     <color name="kPrimary">#1191DA</color>
     <color name="kBackground">#ECF4F8</color>
