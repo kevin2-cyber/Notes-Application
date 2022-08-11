@@ -108,6 +108,7 @@ public class SignUpActivity extends AppCompatActivity {
 
     @Override
     public boolean onSupportNavigateUp() {
+        // go back to previous activity, when back button of actionbar clicked
         onBackPressed();
         return super.onSupportNavigateUp();
     }
