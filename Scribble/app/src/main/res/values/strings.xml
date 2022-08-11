@@ -1,5 +1,6 @@
 <resources>
     <string name="app_name">Scribble Notes App</string>
+    <string name="name">Scribble</string>
     <string name="sign_up">Sign Up</string>
     <string name="login">Login</string>
     <string name="first_sentence">A fast and simple way to journal and</string>
@@ -15,7 +16,10 @@
     <string name="first_half">Want to add notes? Sit back and</string>
     <string name="second_half">relax with just a click on the button below</string>
     <string name="add">Add</string>
-    <string name="title">Title...</string>
-    <string name="something">Go ahead and type something</string>
+    <string name="title">Title</string>
+    <string name="something">Go ahead and type something.......</string>
     <string name="save">Save</string>
+    <string name="date">August 7, 2022</string>
+    <string name="find_your_notes">Find your notes</string>
+    <string name="java_practice">Java Practice</string>
 </resources>
