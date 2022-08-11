@@ -19,6 +19,7 @@ public class MainActivity extends AppCompatActivity {
 
         binding = ActivityMainBinding.inflate(getLayoutInflater());
         super.onCreate(savedInstanceState);
+        setTheme(R.style.Theme_AppCompat_Scribble);
         setContentView(binding.getRoot());
 
         binding.welcomeBtn.setOnClickListener(view -> {
