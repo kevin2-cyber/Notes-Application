@@ -1,19 +1,16 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent">
-
     <androidx.cardview.widget.CardView
         android:id="@+id/card_view"
-        android:layout_width="match_parent"
-        android:background="@color/cardView"
-        android:layout_height="match_parent">
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="200dp"
+        android:background="@drawable/card_item"
+        android:layout_gravity="center"
+        android:layout_height="wrap_content">
 
         <ImageButton
             android:id="@+id/ib_pallet"
-            android:layout_width="50dp"
-            android:layout_height="50dp"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
             android:src="@drawable/pallet_normal"
             android:layout_margin="20dp"
             android:background="@color/red"
@@ -22,10 +19,10 @@
 
         <ImageButton
             android:id="@+id/ib_delete"
-            android:layout_width="50dp"
-            android:layout_height="50dp"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
             android:src="@drawable/ic_jv3"
-            android:layout_marginStart="340dp"
+            android:layout_marginStart="150dp"
             android:layout_marginTop="20dp"
             android:contentDescription="@string/app_name"/>
 
@@ -34,10 +31,10 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="@string/java_practice"
-            android:textSize="20sp"
+            android:textSize="11sp"
             android:fontFamily="@font/poppins"
             android:textColor="@color/kFontColor"
-            android:layout_marginTop="100dp"
+            android:layout_marginTop="80dp"
             android:layout_marginStart="60dp"/>
 
         <TextView
@@ -45,12 +42,10 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="@string/date"
-            android:textSize="20sp"
+            android:textSize="11sp"
             android:fontFamily="@font/poppins"
             android:textColor="@color/kFontColor"
-            android:layout_marginTop="650dp"
+            android:layout_marginTop="250dp"
             android:layout_marginStart="20dp"/>
 
     </androidx.cardview.widget.CardView>
-
-</androidx.constraintlayout.widget.ConstraintLayout>

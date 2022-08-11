@@ -36,7 +36,7 @@ public class SignUpActivity extends AppCompatActivity {
         setContentView(binding.getRoot());
 
         binding.btnSignUp.setOnClickListener( view ->
-                firebaseSignUp()
+                validateData()
                 );
 
         // configure progress dialog
