@@ -94,7 +94,21 @@ public class SignUpActivity extends AppCompatActivity {
                     Toast.makeText(this, "Account created with " + email, Toast.LENGTH_LONG).show();
 
                     // open profile
+                    startActivity(new Intent(this, AddScreenActivity.class));
+                    finish();
 
+                })
+                .addOnFailureListener( e-> {
+
+                    //signup failed
+                    bar.setVisibility(View.INVISIBLE);
+                    Toast.makeText(this,"Sign up failed due to " + e.getMessage(), Toast.LENGTH_LONG).show();
                 });
+    }
+
+    @Override
+    public boolean onSupportNavigateUp() {
+        onBackPressed();
+        return super.onSupportNavigateUp();
     }
 }
