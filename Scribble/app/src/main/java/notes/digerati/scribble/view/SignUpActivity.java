@@ -21,9 +21,7 @@ public class SignUpActivity extends AppCompatActivity {
     private FirebaseAuth auth;
 
     String email = "";
-
     String password = "";
-
     String confirmPassword = "";
 
     @Override
