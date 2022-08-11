@@ -6,10 +6,12 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.text.TextUtils;
 import android.util.Patterns;
+import android.view.View;
 import android.widget.ProgressBar;
 import android.widget.Toast;
 
 import com.google.firebase.auth.FirebaseAuth;
+import com.google.firebase.auth.FirebaseUser;
 
 import java.util.Objects;
 
@@ -39,6 +41,7 @@ public class SignUpActivity extends AppCompatActivity {
 
         // configure progress dialog
         bar = new ProgressBar(this);
+        bar.setVisibility(View.INVISIBLE);
 
         auth = FirebaseAuth.getInstance();
     }
@@ -67,12 +70,31 @@ public class SignUpActivity extends AppCompatActivity {
     }
 
     private void firebaseSignUp(){
-        if (binding.etEmail.getText().equals(email)
-                && binding.etPassword.getText().equals(password)
-                && binding.etPasswordConfirm.getText().equals(password)) {
-            startActivity(new Intent(this, WorkSpaceActivity.class));
-        } else {
-            Toast.makeText(this,"Sign Up unsuccessful", Toast.LENGTH_LONG).show();
-        }
+
+        //show progress
+        bar.setVisibility(View.VISIBLE);
+//        if (binding.etEmail.getText().equals(email)
+//                && binding.etPassword.getText().equals(password)
+//                && binding.etPasswordConfirm.getText().equals(password)) {
+//            startActivity(new Intent(this, WorkSpaceActivity.class));
+//        } else {
+//            Toast.makeText(this,"Sign Up unsuccessful", Toast.LENGTH_LONG).show();
+//        }
+
+        // create account
+        auth.createUserWithEmailAndPassword(email, password)
+                .addOnSuccessListener(task -> {
+
+                    // dismiss progress
+                    bar.setVisibility(View.INVISIBLE);
+
+                    FirebaseUser user = auth.getCurrentUser();
+                    assert user != null;
+                    String email = user.getEmail();
+                    Toast.makeText(this, "Account created with " + email, Toast.LENGTH_LONG).show();
+
+                    // open profile
+
+                });
     }
 }
