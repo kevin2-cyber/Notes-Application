@@ -6,6 +6,7 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.text.TextUtils;
 import android.util.Patterns;
+import android.widget.ProgressBar;
 import android.widget.Toast;
 
 import com.google.firebase.auth.FirebaseAuth;
@@ -20,6 +21,8 @@ public class SignUpActivity extends AppCompatActivity {
 
     private FirebaseAuth auth;
 
+    private ProgressBar bar;
+
     String email = "";
     String password = "";
     String confirmPassword = "";
@@ -33,6 +36,9 @@ public class SignUpActivity extends AppCompatActivity {
         binding.btnSignUp.setOnClickListener( view ->
                 firebaseSignUp()
                 );
+
+        // configure progress dialog
+        bar = new ProgressBar(this);
 
         auth = FirebaseAuth.getInstance();
     }
