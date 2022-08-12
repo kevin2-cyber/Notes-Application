@@ -94,7 +94,8 @@ public class LoginActivity extends AppCompatActivity {
                             Toast.LENGTH_LONG).show();
 
                     // open profile
-                    startActivity(new Intent(this, AddScreenActivity.class));
+                    Intent intent = new Intent(this, AddScreenActivity.class);
+                    startActivity(intent);
                     finish();
                 })
                 .addOnFailureListener( e -> {

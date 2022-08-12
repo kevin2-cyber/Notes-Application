@@ -22,4 +22,6 @@
     <string name="date">August 7, 2022</string>
     <string name="find_your_notes">Find your notes</string>
     <string name="java_practice">Java Practice</string>
+    <string name="logged_in_as">Logged in as</string>
+    <string name="username">email</string>
 </resources>
