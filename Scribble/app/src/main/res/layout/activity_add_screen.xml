@@ -28,6 +28,7 @@
             android:textSize="15sp"/>
 
         <TextView
+            android:id="@+id/tv_email"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="@string/username"
@@ -36,6 +37,18 @@
             android:paddingEnd="0dp"
             android:fontFamily="@font/poppins"
             android:textSize="15sp"/>
+
+        <Button
+            android:id="@+id/btn_sign_out"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/sign_out"
+            android:fontFamily="@font/poppins"
+            android:textSize="15sp"
+            android:padding="10dp"
+            android:textColor="@color/white"
+            android:background="@drawable/round_style"
+            android:layout_marginStart="120dp"/>
 
 
     </LinearLayout>

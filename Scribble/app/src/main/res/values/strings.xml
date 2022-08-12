@@ -24,4 +24,5 @@
     <string name="java_practice">Java Practice</string>
     <string name="logged_in_as">Logged in as</string>
     <string name="username">email</string>
+    <string name="sign_out">Sign Out</string>
 </resources>
