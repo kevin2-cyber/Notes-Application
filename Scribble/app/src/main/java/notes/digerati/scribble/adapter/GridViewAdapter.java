@@ -1,4 +1,3 @@
 package notes.digerati.scribble.adapter;
 
-public class GridViewAdapter {
-}
+public class GridViewAdapter {}
