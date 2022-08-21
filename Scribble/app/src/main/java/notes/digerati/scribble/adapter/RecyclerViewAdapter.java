@@ -30,7 +30,7 @@ public class RecyclerViewAdapter extends RecyclerView.Adapter<RecyclerViewHolder
 
     @Override
     public void onBindViewHolder(@NonNull RecyclerViewHolder holder, int position) {
-        holder.mNote.getResources().getColor(R.color.cardView, context.getTheme());
+        holder.mNote.getResources().getResourceName(R.id.card_view);
 
     }
 
