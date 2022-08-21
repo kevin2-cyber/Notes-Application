@@ -48,7 +48,7 @@
             android:textSize="15sp"
             android:fontFamily="@font/poppins"
             android:textColor="@color/kFontColor"
-            android:layout_marginTop="220dp"
+            android:layout_marginTop="180dp"
             android:paddingBottom="10dp"
             android:layout_marginStart="20dp"/>
 
