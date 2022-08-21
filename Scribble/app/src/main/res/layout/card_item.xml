@@ -5,6 +5,7 @@
     android:layout_width="200dp"
     android:background="@drawable/card_item"
     android:layout_gravity="center"
+    android:padding="10dp"
     android:layout_height="wrap_content">
 
     <ImageButton
