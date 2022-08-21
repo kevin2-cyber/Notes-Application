@@ -6,6 +6,7 @@ import android.view.View;
 import android.view.ViewGroup;
 
 import androidx.annotation.NonNull;
+import androidx.cardview.widget.CardView;
 import androidx.recyclerview.widget.RecyclerView;
 
 import notes.digerati.scribble.R;
@@ -13,11 +14,11 @@ import notes.digerati.scribble.R;
 public class RecyclerViewAdapter extends RecyclerView.Adapter<RecyclerViewHolder>  {
 
     private Context context;
-    private int[] mPlaceList;
+    private int[] mNoteList;
 
-    public RecyclerViewAdapter(Context context, int[] mPlaceList) {
+    public RecyclerViewAdapter(Context context, int[] mNoteList) {
         this.context = context;
-        this.mPlaceList = mPlaceList;
+        this.mNoteList = mNoteList;
     }
 
     @NonNull
@@ -29,13 +30,14 @@ public class RecyclerViewAdapter extends RecyclerView.Adapter<RecyclerViewHolder
 
     @Override
     public void onBindViewHolder(@NonNull RecyclerViewHolder holder, int position) {
+        holder.mNote.getResources().getColor(R.color.cardView, context.getTheme());
 
     }
 
 
     @Override
     public int getItemCount() {
-        return 0;
+        return mNoteList.length;
     }
 
 
@@ -43,7 +45,10 @@ public class RecyclerViewAdapter extends RecyclerView.Adapter<RecyclerViewHolder
 
 class RecyclerViewHolder extends RecyclerView.ViewHolder {
 
+    CardView mNote;
+
     public RecyclerViewHolder(@NonNull View itemView) {
         super(itemView);
+        mNote = itemView.findViewById(R.id.card_view);
     }
 }
