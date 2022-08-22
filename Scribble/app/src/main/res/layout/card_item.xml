@@ -20,7 +20,7 @@
         android:padding="0dp"
         android:background="@drawable/red"
         android:contentDescription="@string/app_name"
-       android:src="@drawable/pallet_normal" />
+        android:src="@drawable/pallet_normal" />
 
 
         <ImageButton
