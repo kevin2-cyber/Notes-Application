@@ -1,4 +1,4 @@
-package notes.digerati.scribble.adapter;
+package notes.digerati.scribble.ui.adapter;
 
 import android.content.Context;
 import android.view.LayoutInflater;

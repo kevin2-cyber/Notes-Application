@@ -1,4 +1,4 @@
-package notes.digerati.scribble.view;
+package notes.digerati.scribble.ui.view;
 
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.recyclerview.widget.GridLayoutManager;
@@ -7,7 +7,7 @@ import androidx.recyclerview.widget.RecyclerView;
 import android.os.Bundle;
 
 import notes.digerati.scribble.R;
-import notes.digerati.scribble.adapter.RecyclerViewAdapter;
+import notes.digerati.scribble.ui.adapter.RecyclerViewAdapter;
 import notes.digerati.scribble.databinding.ActivityTaskBinding;
 
 public class TaskActivity extends AppCompatActivity {
