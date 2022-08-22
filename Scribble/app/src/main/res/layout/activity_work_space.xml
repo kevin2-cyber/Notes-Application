@@ -6,7 +6,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/kBackground"
-    tools:context=".view.WorkSpaceActivity">
+    tools:context=".ui.view.WorkSpaceActivity">
 
 
     <Button
@@ -53,14 +53,14 @@
             android:layout_height="20dp"
             android:layout_margin="10dp"
             android:src="@drawable/pallet_pressed"
-            android:background="@color/violet"
+            android:background="@drawable/violet"
             android:contentDescription="@string/app_name" />
 
         <ImageButton
             android:layout_width="20dp"
             android:layout_height="20dp"
             android:layout_margin="10dp"
-            android:background="@color/indigo"
+            android:background="@drawable/indigo"
             android:src="@drawable/pallet_normal"
             android:contentDescription="@string/app_name" />
         <ImageButton
@@ -68,21 +68,21 @@
             android:layout_height="20dp"
             android:layout_margin="10dp"
             android:src="@drawable/pallet_normal"
-            android:background="@color/red"
+            android:background="@drawable/red"
             android:contentDescription="@string/app_name" />
         <ImageButton
             android:layout_width="20dp"
             android:layout_height="20dp"
             android:layout_margin="10dp"
             android:src="@drawable/pallet_normal"
-            android:background="@color/lightGreen"
+            android:background="@drawable/green"
             android:contentDescription="@string/app_name" />
         <ImageButton
             android:layout_width="20dp"
             android:layout_height="20dp"
             android:layout_margin="10dp"
             android:src="@drawable/pallet_normal"
-            android:background="@color/amber"
+            android:background="@drawable/amber"
             android:contentDescription="@string/app_name" />
 
 

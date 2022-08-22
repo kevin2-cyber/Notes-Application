@@ -5,7 +5,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:background="@color/kPrimary"
     xmlns:tools="http://schemas.android.com/tools"
-    tools:context=".view.TaskActivity">
+    tools:context=".ui.view.TaskActivity">
 
     <TextView
         android:id="@+id/tv_app_name"

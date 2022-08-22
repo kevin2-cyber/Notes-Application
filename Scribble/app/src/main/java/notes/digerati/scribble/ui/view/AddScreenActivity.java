@@ -1,4 +1,4 @@
-package notes.digerati.scribble.view;
+package notes.digerati.scribble.ui.view;
 
 import androidx.appcompat.app.AppCompatActivity;
 
